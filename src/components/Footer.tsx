@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react"
 import GitHubIcon from "./GitHubIcon"
+import LinkedInIcon from "./LinkedInIcon"
 
 export default function Footer() {
   return (
@@ -14,6 +15,14 @@ export default function Footer() {
             className="hover:text-zinc-800 dark:hover:text-zinc-200"
           >
             <GitHubIcon size={18} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/maenrat-phaiphon-0963b8377"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-800 dark:hover:text-zinc-200"
+          >
+            <LinkedInIcon size={18} />
           </a>
           <a
             href="mailto:phaiphon.m@gmail.com"

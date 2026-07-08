@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react"
 import GitHubIcon from "@/components/GitHubIcon"
+import LinkedInIcon from "@/components/LinkedInIcon"
 import { FadeInUp } from "@/components/AnimatedSection"
 
 export default function Contact() {
@@ -36,6 +37,21 @@ export default function Contact() {
               <p className="font-medium">GitHub</p>
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
                 github.com/Supmanzz555
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/maenrat-phaiphon-0963b8377"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-xl border border-zinc-200 p-4 transition-colors hover:border-zinc-400 dark:border-zinc-800 dark:hover:border-zinc-600"
+          >
+            <LinkedInIcon size={20} />
+            <div>
+              <p className="font-medium">LinkedIn</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                Maenrat Phaiphon
               </p>
             </div>
           </a>

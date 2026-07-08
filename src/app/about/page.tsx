@@ -1,13 +1,24 @@
 import { getPageContent } from "@/lib/content"
 import { MapPin, Mail } from "lucide-react"
 import GitHubIcon from "@/components/GitHubIcon"
+import LinkedInIcon from "@/components/LinkedInIcon"
 import Markdown from "react-markdown"
 import { FadeInUp } from "@/components/AnimatedSection"
 import SkillsGrid from "@/components/SkillsGrid"
+import PublicationCard from "@/components/PublicationCard"
 
 export default function About() {
   const data = getPageContent("about")
   if (!data) return null
+
+  const publication = {
+    title: "Deep Learning-Based Approach for [Paper Title]",
+    authors: "M. Phaiphon, [Co-authors]",
+    venue: "IEEE Xplore",
+    year: "2025",
+    doi: "10.1109/11298059",
+    url: "https://ieeexplore.ieee.org/document/11298059",
+  }
 
   return (
     <FadeInUp>
@@ -29,6 +40,15 @@ export default function About() {
             Supmanzz555
           </a>
           <a
+            href="https://www.linkedin.com/in/maenrat-phaiphon-0963b8377"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-zinc-900 dark:hover:text-zinc-100"
+          >
+            <LinkedInIcon size={14} />
+            Maenrat Phaiphon
+          </a>
+          <a
             href="mailto:phaiphon.m@gmail.com"
             className="flex items-center gap-1.5 hover:text-zinc-900 dark:hover:text-zinc-100"
           >
@@ -39,6 +59,11 @@ export default function About() {
 
         <div className="prose prose-zinc max-w-none dark:prose-invert">
           <Markdown>{data.content}</Markdown>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="mb-4 text-xl font-semibold">Publications</h2>
+          <PublicationCard pub={publication} />
         </div>
 
         <SkillsGrid />
