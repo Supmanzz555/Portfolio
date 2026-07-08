@@ -13,7 +13,7 @@ export default function Home() {
       <FadeInUp>
         <section className="mb-24">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Maenrat Phaiphon (Man)</span>
+            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Maenrat</span>
           </h1>
           <p className="mt-4 max-w-xl text-lg text-zinc-600 dark:text-zinc-400">
             AI Engineer focused on Generative AI, Data Engineering, and building intelligent systems.
