@@ -6,6 +6,7 @@ import Markdown from "react-markdown"
 import { FadeInUp } from "@/components/AnimatedSection"
 import SkillsGrid from "@/components/SkillsGrid"
 import PublicationCard from "@/components/PublicationCard"
+import ExperienceSection from "@/components/ExperienceSection"
 
 export default function About() {
   const data = getPageContent("about")
@@ -65,6 +66,8 @@ export default function About() {
           <h2 className="mb-4 text-xl font-semibold">Publications</h2>
           <PublicationCard pub={publication} />
         </div>
+
+        <ExperienceSection />
 
         <SkillsGrid />
       </div>
