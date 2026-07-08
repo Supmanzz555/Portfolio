@@ -18,6 +18,9 @@ export default function Header() {
           <Link href="/projects" className="hover:text-zinc-600 dark:hover:text-zinc-300">
             Projects
           </Link>
+          <Link href="/blog" className="hover:text-zinc-600 dark:hover:text-zinc-300">
+            Blog
+          </Link>
           <Link href="/contact" className="hover:text-zinc-600 dark:hover:text-zinc-300">
             Contact
           </Link>
