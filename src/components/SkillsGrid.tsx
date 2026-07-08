@@ -13,6 +13,14 @@ import {
   Terminal,
   BookOpen,
   Coffee,
+  Brain,
+  Layers,
+  Scan,
+  BarChart3,
+  Palette,
+  Cloud,
+  Globe,
+  AppWindow,
 } from "lucide-react"
 
 const skillCategories = [
@@ -25,13 +33,17 @@ const skillCategories = [
     ],
   },
   {
-    title: "AI / ML",
+    title: "AI & Machine Learning",
     skills: [
       { name: "Generative AI", icon: Sparkles },
       { name: "RAG", icon: Search },
       { name: "LLMs", icon: MessageSquare },
       { name: "NLP", icon: FileText },
       { name: "Agentic Systems", icon: Cpu },
+      { name: "TensorFlow", icon: Brain },
+      { name: "Keras", icon: Layers },
+      { name: "Computer Vision", icon: Scan },
+      { name: "Statistical ML", icon: BarChart3 },
     ],
   },
   {
@@ -40,6 +52,21 @@ const skillCategories = [
       { name: "Apache Kafka", icon: Network },
       { name: "Apache Spark", icon: Zap },
       { name: "ETL Pipelines", icon: ArrowLeftRight },
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      { name: "HTML", icon: Code2 },
+      { name: "CSS", icon: Palette },
+      { name: "Vue.js", icon: AppWindow },
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: [
+      { name: "Cloudflare", icon: Cloud },
+      { name: "AWS", icon: Globe },
     ],
   },
   {
