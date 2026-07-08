@@ -21,6 +21,8 @@ import {
   Cloud,
   Globe,
   AppWindow,
+  Container,
+  FileJson,
 } from "lucide-react"
 
 const skillCategories = [
@@ -30,6 +32,7 @@ const skillCategories = [
       { name: "Python", icon: Code2 },
       { name: "Java", icon: Coffee },
       { name: "SQL", icon: Database },
+      { name: "JavaScript", icon: FileJson },
     ],
   },
   {
@@ -75,6 +78,7 @@ const skillCategories = [
       { name: "Git", icon: GitBranch },
       { name: "Linux", icon: Terminal },
       { name: "Jupyter", icon: BookOpen },
+      { name: "Docker", icon: Container },
     ],
   },
 ]
