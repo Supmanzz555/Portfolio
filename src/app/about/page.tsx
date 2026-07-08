@@ -12,8 +12,8 @@ export default function About() {
   if (!data) return null
 
   const publication = {
-    title: "Deep Learning-Based Approach for [Paper Title]",
-    authors: "M. Phaiphon, [Co-authors]",
+    title: "Detection of AI-Generated vs. Real Human Images Using Anatomical Subregions (Hands, Eyes, Nose) with Image Processing and Deep Learning",
+    authors: "M. Phaiphon et al.",
     venue: "IEEE Xplore",
     year: "2025",
     doi: "10.1109/11298059",
