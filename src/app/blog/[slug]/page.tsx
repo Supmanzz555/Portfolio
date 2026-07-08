@@ -18,7 +18,7 @@ export async function generateMetadata({
   const post = getPostBySlug(slug)
   if (!post) return {}
   return {
-    title: `${post.frontmatter.title} | Supmanzz`,
+    title: `${post.frontmatter.title} | Maenrat Phaiphon (Man)`,
     description: post.frontmatter.description,
   }
 }

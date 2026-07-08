@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-zinc-200 dark:border-zinc-800">
       <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-6 text-sm text-zinc-500">
-        <p>&copy; {new Date().getFullYear()} Supmanzz. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Maenrat Phaiphon (Man). All rights reserved.</p>
         <div className="flex items-center gap-4">
           <a
             href="https://github.com/Supmanzz555"

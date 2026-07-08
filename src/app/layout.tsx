@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Supmanzz | AI Engineer",
+  title: "Maenrat Phaiphon (Man) | AI Engineer",
   description: "AI Engineer specializing in Generative AI, Data Engineering, and RAG systems.",
 }
 
