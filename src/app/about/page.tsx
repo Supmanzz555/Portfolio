@@ -3,6 +3,7 @@ import { MapPin, Mail } from "lucide-react"
 import GitHubIcon from "@/components/GitHubIcon"
 import Markdown from "react-markdown"
 import { FadeInUp } from "@/components/AnimatedSection"
+import SkillsGrid from "@/components/SkillsGrid"
 
 export default function About() {
   const data = getPageContent("about")
@@ -39,6 +40,8 @@ export default function About() {
         <div className="prose prose-zinc max-w-none dark:prose-invert">
           <Markdown>{data.content}</Markdown>
         </div>
+
+        <SkillsGrid />
       </div>
     </FadeInUp>
   )
