@@ -12,6 +12,7 @@ export interface ProjectFrontmatter {
   featured?: boolean
   category?: string
   image?: string
+  images?: string[]
   demo?: string
 }
 

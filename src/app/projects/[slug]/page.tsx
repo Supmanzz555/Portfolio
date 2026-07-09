@@ -39,7 +39,7 @@ export default async function ProjectPage({
 
   return (
     <FadeInUp>
-      <div className="mx-auto max-w-2xl px-4 py-16">
+      <div className="mx-auto max-w-3xl px-4 py-16">
         <Link
           href="/projects"
           className="mb-6 flex items-center gap-1.5 text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
@@ -48,17 +48,19 @@ export default async function ProjectPage({
           Back to projects
         </Link>
 
-        <div className="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800">
-          <ProjectImage title={frontmatter.title} category={frontmatter.category} />
-        </div>
+        <ProjectImage
+          title={frontmatter.title}
+          category={frontmatter.category}
+          src={frontmatter.image}
+        />
 
-        <div className="mt-6">
+        <div className="mt-8">
           {frontmatter.category && (
             <p className="text-xs font-medium uppercase tracking-wider text-blue-600 dark:text-blue-400">
               {frontmatter.category}
             </p>
           )}
-          <h1 className="text-3xl font-bold">{frontmatter.title}</h1>
+          <h1 className="mt-1 text-3xl font-bold">{frontmatter.title}</h1>
           <p className="mt-2 text-lg text-zinc-600 dark:text-zinc-400">
             {frontmatter.description}
           </p>
@@ -97,6 +99,24 @@ export default async function ProjectPage({
             )}
           </div>
         </div>
+
+        {frontmatter.images && frontmatter.images.length > 0 && (
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            {frontmatter.images.map((img, i) => (
+              <div
+                key={i}
+                className="overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={img}
+                  alt={`${frontmatter.title} screenshot ${i + 1}`}
+                  className="w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="prose prose-zinc mt-10 max-w-none dark:prose-invert">
           <Markdown>{content}</Markdown>
