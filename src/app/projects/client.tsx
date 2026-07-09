@@ -47,7 +47,7 @@ export default function ProjectFilter({ projects }: { projects: ProjectFrontmatt
         </div>
       )}
 
-      <StaggerContainer>
+      <StaggerContainer key={active ?? "all"}>
         <div className="grid gap-6 sm:grid-cols-2">
           {filtered.map((p) => (
             <StaggerItem key={p.slug}>
