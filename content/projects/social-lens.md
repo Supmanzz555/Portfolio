@@ -4,6 +4,7 @@ description: "End-to-end data engineering pipeline integrating APIs, Kafka, Spar
 tech: ["Python", "Kafka", "Spark", "Data Engineering", "APIs"]
 github: "https://github.com/Supmanzz555/social-lens"
 featured: true
+category: Data Engineering
 ---
 
 ## Overview

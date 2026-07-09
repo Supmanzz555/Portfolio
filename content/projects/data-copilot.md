@@ -4,6 +4,7 @@ description: "RAG Copilot System for answering SQL-related questions"
 tech: ["Python", "RAG", "LLM", "SQL", "NLP"]
 github: "https://github.com/Supmanzz555/Data_Copilot"
 featured: true
+category: AI
 ---
 
 ## Overview

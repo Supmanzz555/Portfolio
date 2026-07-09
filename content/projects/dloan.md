@@ -4,6 +4,7 @@ description: "Agentic Gen AI Loan Applicant Screening System"
 tech: ["Python", "Gen AI", "Agents", "LLM"]
 github: "https://github.com/Supmanzz555/dLoan"
 featured: true
+category: AI
 ---
 
 ## Overview

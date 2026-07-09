@@ -10,6 +10,9 @@ export interface ProjectFrontmatter {
   github: string
   slug: string
   featured?: boolean
+  category?: string
+  image?: string
+  demo?: string
 }
 
 export interface PageFrontmatter {
