@@ -2,6 +2,6 @@
 title: "About Me"
 ---
 
-I'm an AI Engineer with a passion for building intelligent systems that solve real-world problems. My expertise spans generative AI, data engineering, natural language processing, and building agentic workflows.
+I'm passionate about Artificial Intelligence and building systems that bridge research and real-world applications. My work spans LLM applications, RAG systems, AI agents, deep learning, computer vision, and backend services that integrate AI into practical solutions.
 
-Based in Thailand, I focus on creating practical AI solutions — from RAG-powered copilots to end-to-end data pipelines. I believe there's always more to learn, and I'm constantly exploring new technologies and approaches.
+I enjoy the full lifecycle — designing, training, evaluating, and deploying models — and I'm always exploring how AI research can be transformed into reliable production systems. Beyond AI, I build scalable APIs and work with Linux environments, continuously learning new technologies across AI engineering, MLOps, and software development.
