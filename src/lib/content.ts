@@ -20,14 +20,6 @@ export interface PageFrontmatter {
   title: string
 }
 
-export interface BlogFrontmatter {
-  title: string
-  description: string
-  date: string
-  tags: string[]
-  slug: string
-}
-
 function parseFrontmatter(fileContent: string) {
   const frontmatterRegex = /---\s*([\s\S]*?)\s*---/
   const match = frontmatterRegex.exec(fileContent)
@@ -72,28 +64,6 @@ export function getProjectBySlug(slug: string) {
   const raw = fs.readFileSync(filePath, "utf-8")
   const { frontmatter, content } = parseFrontmatter(raw)
   return { frontmatter: { ...frontmatter, slug } as ProjectFrontmatter, content }
-}
-
-export function getAllPosts(): BlogFrontmatter[] {
-  const blogDir = path.join(contentDir, "blog")
-  if (!fs.existsSync(blogDir)) return []
-  const files = fs.readdirSync(blogDir)
-  return files
-    .filter((f) => f.endsWith(".md"))
-    .map((f) => {
-      const raw = fs.readFileSync(path.join(blogDir, f), "utf-8")
-      const { frontmatter } = parseFrontmatter(raw)
-      return { ...frontmatter, slug: f.replace(".md", "") } as BlogFrontmatter
-    })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-}
-
-export function getPostBySlug(slug: string) {
-  const filePath = path.join(contentDir, "blog", `${slug}.md`)
-  if (!fs.existsSync(filePath)) return null
-  const raw = fs.readFileSync(filePath, "utf-8")
-  const { frontmatter, content } = parseFrontmatter(raw)
-  return { frontmatter: { ...frontmatter, slug } as unknown as BlogFrontmatter, content }
 }
 
 export function getPageContent(slug: string) {
